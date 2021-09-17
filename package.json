@@ -1,0 +1,42 @@
+{
+  "name": "@composejs/cli",
+  "version": "0.0.9",
+  "description": "Create mobile applications using JavaScript",
+  "main": "src/compose.js",
+  "bin": {
+    "@composejs/cli": "bin/compose.js",
+    "compose": "bin/compose.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "compose",
+    "android",
+    "ui",
+    "material"
+  ],
+  "author": "Jeeva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whoisjeeva/composejs-cli/issues"
+  },
+  "homepage": "https://github.com/whoisjeeva/composejs-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisjeeva/composejs-cli.git"
+  },
+  "dependencies": {
+    "arg": "^5.0.1",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.2",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.15",
+    "inquirer": "^8.1.2",
+    "ncp": "^2.0.0",
+    "promisify": "0.0.3"
+  }
+}

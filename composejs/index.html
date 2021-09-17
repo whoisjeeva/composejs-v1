@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‗APP_NAME‗</title>
+</head>
+<body>
+
+    <div id="app"></div>
+    
+    <script src="compose/integrate/assets/hammer.js"></script>
+    <script data-entry-point type="module" src="src/App.js"></script>
+    <script data-tmp>
+        function initReloading() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                if (xhttp.responseText == "1") {
+                    location.reload();
+                }
+            }
+        };
+        xhttp.open("GET", "/changes", true);
+        xhttp.send();
+    }
+
+    setInterval(initReloading, 500)
+    </script>
+</body>
+</html>
