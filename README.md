@@ -5,15 +5,17 @@ A declarative toolkit for mobile application development using the JavaScript pr
 
 ### Compose CLI
 
-Compose CLI is a small utility tool that allows you to build, integrate or serve your ComposeJS application
-
-**Installation**
+Compose CLI is a small utility tool that allows you to build, integrate or serve your ComposeJS application. Install the compose CLI using the NPM.
 
 ```
 $ npm i -g @composejs/cli
 ```
 
-**Build**
+Create a new project
+
+```sh
+$ compose create myapp
+```
 
 Build your compose app into an Android apk or aab
 
@@ -22,15 +24,11 @@ $ compose build --debug
 $ compose build --release
 ```
 
-**Integrate**
-
 Generate files to integrate compose app into your existing Android application
 
 ```sh
 $ compose integrate
 ```
-
-**Serve**
 
 Create a web server to debug your compose app while developing
 
